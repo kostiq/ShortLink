@@ -1,0 +1,7 @@
+{% load bootstrap %}
+
+<form method="post" action="test">
+    {% csrf_token %}
+    {{ form|bootstrap }}
+    <input type="submit">
+</form>
